@@ -1,3 +1,18 @@
+# Context
+
+This code represents a credit card in a billing system, its validation, storage
+and retrieval.  Think of the online shopping that you've done in the past and
+what its like to enter a credit card in Amazon.com or similar shopping site.
+
+Your goal here is to learn more about this code so that you can confidently discuss
+the features of the system while speaking with potential customers. In your last
+meeting with them they were wondering the following:
+
+- how many different types of credit cards do you support?
+- how are you ensuring valid credit card information enters the system?
+- what data are you collecting from our customers when they register a credit card?
+- what rules do you support around refunds and credits to customers?
+
 # Code
 
 ```rb
@@ -131,20 +146,50 @@ end
 
 # Questions
 
-1. How many credit cards are supported by Stripe?
+-M-
+Which line is responsible for ensuring that the credit card expiration month
+and year are both numbers (as opposed to some arbitrary text, for example)?
 
-2. What substitution occurs when `jquery.payment` refers to `amex`?
+  ___enter line number___
 
-3. When can a payment not be credited?
+Hints:
+- credit card month and year must both be numbers
+- programmers are specific about numbers and distinguish between integers and floating point numbers
+- credit cards with non integer months and years would be invalidated by this code
+
+
+-E-
+What data can we infer is NOT collected by the system in order to register a new credit card?
+
+  ___multiple choice___
+
+  - name
+  - billing zipcode
+  - card number
+  - expiration month and year
+
+Hints:
+- this code includes lines that explicitly create a new credit card
+
+
+-E-
+How many credit card types are supported by this system?
+
+  __enter a number__
+
+Hints:
+- this code explicitly defines the types of cards supported
+
+
+-H-
+When can a payment not be credited?
+
   - when the payment is incomplete or credit is owed
   - when the payment is complete and credit is not owed
   - when the payment is incomplete or credit is owed or zero credit is allowed
   - no payments can be credited
 
-4. Where is this code executed?
-  - the browser
-  - the server
-  - the command line
-  - this is not code, this is just encoded data
-
-
+Hints:
+- the ability to credit a payment is explicitly defined in this code
+- the rules for being able to credit a customer are all bundled close together
+- comments are used by developers to help clarify complex decisions made by the system
