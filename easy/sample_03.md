@@ -131,17 +131,17 @@ end
 
 # Questions
 
-How many credit cards are supported by Stripe?
+1. How many credit cards are supported by Stripe?
 
-What substitution occurs when `jquery.payment` refers to `amex`?
+2. What substitution occurs when `jquery.payment` refers to `amex`?
 
-When can a payment not be credited?
+3. When can a payment not be credited?
   - when the payment is incomplete or credit is owed
   - when the payment is complete and credit is not owed
   - when the payment is incomplete or credit is owed or zero credit is allowed
   - no payments can be credited
 
-Where is this code executed?
+4. Where is this code executed?
   - the browser
   - the server
   - the command line

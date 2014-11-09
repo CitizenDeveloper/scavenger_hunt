@@ -48,23 +48,23 @@ end
 
 # Questions
 
-The following code interacts with:
+1. The following code interacts with:
   - a database
   - an API
   - neither
 
-The code above relates to the following:
+2. The code above relates to the following:
   - credit card transactions
   - couples therapy
   - restaurant point of sale
 
-Does the above code support creating a subscription?
+3. Does the above code support creating a subscription?
   - Yes
   - No
 
-What lines of code deal with refunds?
+4. What lines of code deal with refunds?
 
-Where is this code executed?
+5. Where is this code executed?
   - the browser
   - the server
   - the command line
