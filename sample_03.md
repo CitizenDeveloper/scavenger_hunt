@@ -314,30 +314,42 @@ d3_rgb_names.forEach(function(key, value) {
 
 # Questions
 
--E-
+---
+
 How many of the Stanford colors are supported out of the box by this code?
 
-  __enter a number__
+`the answer is a number`
 
--E-
+---
+
 How many variants of "red" does this code support?
+
+`the answer is a number`
 
 Hints:
 - assume all "redish" colors contain the word red
 
--M-
+---
+
 Which lines of code would run if you chose to darken an existing shade of red?
+
+`the answer is one or more line numbers`
 
 Hints:
 - literate programming encourages developers to use named pieces of code that
 closely match their intention
 
--H-
+---
+
 Looking at the code that darkens colors, can you identify how it works?
+
+```
+the answer is among the following options
 
   - it reduces each rgb value
   - it increases each rgb value
   - it increases the a value in an rgba number
+```
 
 Hints:
 - assuming you found the code that darkens colors, it might help to know that `Math.pow()` raises a number to the power of some number
