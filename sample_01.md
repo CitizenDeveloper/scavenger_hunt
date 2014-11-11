@@ -146,11 +146,36 @@ end
 
 # Questions
 
--M-
+What data can we infer is NOT collected by the system in order to register a new credit card?
+
+```
+the answer is among the following options
+
+  - name
+  - billing zipcode
+  - card number
+  - expiration month and year
+```
+
+Hints:
+- this code includes lines that explicitly create a new credit card
+
+
+---
+
+How many credit card types are supported by this system?
+
+`the answer is a number`
+
+Hints:
+- this code explicitly defines the types of cards supported
+
+---
+
 Which line is responsible for ensuring that the credit card expiration month
 and year are both numbers (as opposed to some arbitrary text, for example)?
 
-  ___enter line number___
+`the answer is a line number`
 
 Hints:
 - credit card month and year must both be numbers
@@ -158,36 +183,18 @@ Hints:
 - credit cards with non integer months and years would be invalidated by this code
 
 
--E-
-What data can we infer is NOT collected by the system in order to register a new credit card?
+---
 
-  ___multiple choice___
-
-  - name
-  - billing zipcode
-  - card number
-  - expiration month and year
-
-Hints:
-- this code includes lines that explicitly create a new credit card
-
-
--E-
-How many credit card types are supported by this system?
-
-  __enter a number__
-
-Hints:
-- this code explicitly defines the types of cards supported
-
-
--H-
 When can a payment not be credited?
+
+```
+the answer is among the following options
 
   - when the payment is incomplete or credit is owed
   - when the payment is complete and credit is not owed
   - when the payment is incomplete or credit is owed or zero credit is allowed
   - no payments can be credited
+```
 
 Hints:
 - the ability to credit a payment is explicitly defined in this code
